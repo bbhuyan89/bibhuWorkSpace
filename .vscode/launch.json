@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "TestDemo",
+            "request": "launch",
+            "mainClass": "webPages.TestDemo",
+            "projectName": "CucumberFramework"
+        },
+        {
+            "type": "java",
+            "name": "Run Cucumber Tests",
+            "request": "launch",
+            "mainClass": "testRunnerFile.ScenarioTest",
+            "projectName": "CucumberFramework",
+            "env": {
+                "JAVA_HOME": "/opt/homebrew/opt/openjdk@21"
+            },
+            "args": [],
+            "vmArgs": [
+                "-Djava.awt.headless=false"
+            ]
+        }
+    ]
+}
